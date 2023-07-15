@@ -39,6 +39,7 @@ body {
   outline: none;
   font-size: 18px;
   color: #191411;
+  font-weight:600;
 }
 
 .button:hover {
@@ -160,13 +161,14 @@ body {
   background-position: top center;
   background-size: initial;
   padding-bottom: 180px;
+  background-repeat: no-repeat;
 }
 
 .why-items {
   margin-top: 60px;
-  display: flex;
+  display: grid;
   gap: 100px;
-  grid-template-columns: repeat(3 312px);
+  grid-template-columns: repeat(3, 312px);
   justify-content: center;
 }
 
