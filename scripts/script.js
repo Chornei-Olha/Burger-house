@@ -7,7 +7,7 @@ document.getElementById("main-action-button").onclick = function () {
 let links = document.querySelectorAll(".menu-item > a");
 
 for (let i = 0; i < links.length; i++) {
-  links[i].onClick = function () {
+  links[i].onclick = function () {
     document
       .getElementById(links[i].getAttribute("data-link"))
       .scrollIntoView({ behavior: "smooth" });
@@ -17,7 +17,7 @@ for (let i = 0; i < links.length; i++) {
 let buttons = document.getElementsByClassName("product-button");
 
 for (let i = 0; i < buttons.length; i++) {
-  buttons[i].onClick = function () {
+  buttons[i].onclick = function () {
     document.getElementById("order").scrollIntoView({ behavior: "smooth" });
   };
 }
@@ -47,7 +47,7 @@ document.getElementById("order-action").onclick = function () {
 };
 
 let prices = document.getElementsByClassName("products-item-price");
-document.getElementById("change-currency").onClick = function (e) {
+document.getElementById("change-currency").onclick = function (e) {
   let currentCurrency = e.target.innerText;
   let newCurrency = "$";
   let coefficient = 1;
